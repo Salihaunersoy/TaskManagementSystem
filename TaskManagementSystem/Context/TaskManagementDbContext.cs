@@ -54,7 +54,7 @@ namespace TaskManagementSystem.Context
 				entity.HasOne<User>()
 					  .WithMany()
 					  .HasForeignKey(t => t.CreatedByAdminId)
-					  .OnDelete(DeleteBehavior.Restrict);
+					  .OnDelete(DeleteBehavior.Restrict); 
 			});
 		}
 
